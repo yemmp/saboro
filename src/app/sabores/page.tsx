@@ -1,4 +1,4 @@
-import ProductCarousel from "@/components/ProductCarousel";
+import ProductCarousel from "@/components/productCarousel";
 import React from "react";
 
 export default function Page() {
