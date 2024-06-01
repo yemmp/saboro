@@ -11,7 +11,7 @@ export default function AboutUsCard() {
           <h1 className="text-white md:text-xl font-bold text-center">
             Sobre nós
           </h1>
-          <p>
+          <p className="text-center">
             Na busca por experiências únicas, nasce a <b>Saboroo</b>, uma marca
             que redefine o conceito de sabor, nossa jornada começou nas ruas da
             cidade de Belo Horizonte, onde a vida urbana encontra a criatividade
