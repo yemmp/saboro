@@ -18,9 +18,11 @@ export default function Home() {
           Saboroo
           <br />
           Arte em cada colher,
-          <br /> Frescor em Cada Mordida{" "}
+          <br /> Frescor em Cada Mordida
         </h1>
-        <Button className="md:w-[30%] md:p-6">Faça Seu Pedido!</Button>
+        <Button variant="secondary" className="text-white md:w-[30%] md:p-6">
+          Faça Seu Pedido!
+        </Button>
       </div>
     </article>
   );

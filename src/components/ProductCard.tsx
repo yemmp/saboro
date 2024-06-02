@@ -21,7 +21,7 @@ export default function ProductCard({
   return (
     <Card
       className={cn(
-        "flex overflow-hidden relative flex-col shadow-sm items-center  mt-6 text-white bg-opacity-60 ",
+        "flex overflow-hidden relative flex-col shadow-sm items-center h-full text-center text-white bg-opacity-60 ",
         `bg-${color}`
       )}
       //   className={`flex overflow-hidden relative flex-col shadow-sm items-center gap-6 bg-${color}/25 mt-20 text-white `}
@@ -34,19 +34,25 @@ export default function ProductCard({
           <AvatarFallback>{imgFallback}</AvatarFallback>
         </Avatar>
         <CardTitle
-          className={`bg-${color} overflow-hidden md:overflow-auto rounded-full p-4`}
+          className={`bg-${color} uppercase w-fit overflow-hidden md:overflow-auto rounded-full p-4`}
         >
           {product.name}
         </CardTitle>
       </CardHeader>
-      <CardContent className="flex  flex-col text-xl justify-center items-center">
-        <p className="hidden md:block">{product.description}</p>
+      <CardContent className="flex  flex-col text-xl gap-2 justify-center items-center">
+        <p className="">{product.description}</p>
         <p>
           R$ <span className="font-bold text-3xl">{product.price}</span>
         </p>
       </CardContent>
       <CardFooter>
-        <Button className={cn("p-6 uppercase", `bg-${color}`)} asChild>
+        <Button
+          className={cn(
+            "p-6 uppercase",
+            `bg-${color} hover:bg-white/5 shadow-md`
+          )}
+          asChild
+        >
           <Link href="/novo-pedido">Peça Já!</Link>
         </Button>
       </CardFooter>

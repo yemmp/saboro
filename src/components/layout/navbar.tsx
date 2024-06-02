@@ -21,7 +21,9 @@ export default function Navbar() {
         {navContent.map((item) => (
           <NavItem key={item.route} name={item.name} route={item.route} />
         ))}
-        <Button className="p-1 md:p-4">Entrar</Button>
+        <Button variant="secondary" className="text-white p-1 md:p-4">
+          Entrar
+        </Button>
       </ul>
     </nav>
   );

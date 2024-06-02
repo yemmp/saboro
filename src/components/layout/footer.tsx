@@ -5,7 +5,7 @@ import { Instagram } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="flex  flex-col items-center bg-primary md:gap-6 text-white  w-full md:p-4">
+    <footer className="flex  flex-col items-center bg-primary md:gap-6 text-white  w-screen md:p-4">
       <div className=" flex flex-col items-center md:gap-2">
         <Button className="rounded-full" size="icon" variant={"ghost"} asChild>
           <a href={INSTAGRAM_URL} target="_blank">
