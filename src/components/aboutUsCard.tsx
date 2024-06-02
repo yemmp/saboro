@@ -8,7 +8,7 @@ export default function AboutUsCard() {
   return (
     <Card className="bg-primary p-0 md:mt-6 h-fit w-full text-white">
       <CardContent className="flex h-full p-0">
-        <div className="flex flex-col md:w-1/2 p-6  items-center gap-2 text-base md:text-xl text-white">
+        <div className="flex flex-col md:w-1/2 p-6  items-center gap-2 text-base  text-white">
           <h1 className="text-white md:text-xl font-bold text-center">
             Sobre nós
           </h1>
