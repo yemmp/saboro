@@ -10,42 +10,42 @@ export const navContent = [
 export const products = [
   {
     name: "Açaí Tradicional",
-    color: "purple-500",
+    color: "[#7069ae]",
+    // secondColor: "[#161f36]",
+    secondColor: "[#f5f5f4]",
     imgUrl:
       "https://img.freepik.com/fotos-premium/batido-de-sorvete-brasileiro-de-acai-berry-em-copo-plastico-com-banana-morango-e-leite-condensado-isolado-no-fundo-branco-vista-frontal-para-menu-e-midia-social_317399-1244.jpg?w=740",
-    description: "Uma deliciosa mistura de açaí com banana e morango.",
+    description: "Creme de Açaí Tradicional Saboroo.",
     price: "20,00",
   },
   {
-    name: "Açaí com Granola",
-    color: "yellow-600",
+    name: "Açaí Ruby",
+    color: "[#e6282d]",
+    secondColor: "[#f5f5f4]",
     imgUrl:
       "https://img.freepik.com/fotos-premium/batido-de-sorvete-brasileiro-de-acai-berry-em-copo-plastico-com-banana-morango-e-leite-condensado-isolado-no-fundo-branco-vista-frontal-para-menu-e-midia-social_317399-1244.jpg?w=740",
-    description: "Açaí combinado com granola crocante.",
+    description:
+      "Creme de Açaí Vermelho, deliciosamente mais avermelhado e levemente amargo.",
     price: "22,50",
   },
   {
-    name: "Açaí com Leite Condensado",
-    color: "blue-500",
+    name: "Açaí Vital",
+    color: "[#81bb26]",
+    secondColor: "[#f5f5f4]",
     imgUrl:
       "https://img.freepik.com/fotos-premium/batido-de-sorvete-brasileiro-de-acai-berry-em-copo-plastico-com-banana-morango-e-leite-condensado-isolado-no-fundo-branco-vista-frontal-para-menu-e-midia-social_317399-1244.jpg?w=740",
-    description: "Açaí adoçado com leite condensado.",
+    description:
+      "Creme de Açaí com frutas cítricas, para aquela pitada de refrescância",
     price: "24,00",
   },
   {
-    name: "Açaí com Mel",
-    color: "amber-700",
+    name: "Açaí com Whey",
+    color: "[#7f4d12]",
+    secondColor: "[#f5f5f4]",
     imgUrl:
       "https://img.freepik.com/fotos-premium/batido-de-sorvete-brasileiro-de-acai-berry-em-copo-plastico-com-banana-morango-e-leite-condensado-isolado-no-fundo-branco-vista-frontal-para-menu-e-midia-social_317399-1244.jpg?w=740",
-    description: "Açaí com um toque especial de mel.",
+    description:
+      "Creme de Açaí com Whey, para você que leva uma vida fitness, mas não quer abrir mão de uma deliciosa sobremesa",
     price: "23,00",
-  },
-  {
-    name: "Açaí com Paçoca",
-    color: "green-500",
-    imgUrl:
-      "https://img.freepik.com/fotos-premium/batido-de-sorvete-brasileiro-de-acai-berry-em-copo-plastico-com-banana-morango-e-leite-condensado-isolado-no-fundo-branco-vista-frontal-para-menu-e-midia-social_317399-1244.jpg?w=740",
-    description: "Açaí combinado com paçoca.",
-    price: "25,50",
   },
 ];

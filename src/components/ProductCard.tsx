@@ -16,13 +16,14 @@ export default function ProductCard({
   img,
   imgFallback,
   color,
+  secondColor,
   product,
 }: ProductCardProps) {
   return (
     <Card
       className={cn(
-        "flex overflow-hidden relative flex-col shadow-sm items-center h-full text-center text-white bg-opacity-60 ",
-        `bg-${color}`
+        "flex overflow-hidden relative flex-col shadow-sm items-center h-full text-center text-white  ",
+        `bg-${secondColor}`
       )}
       //   className={`flex overflow-hidden relative flex-col shadow-sm items-center gap-6 bg-${color}/25 mt-20 text-white `}
     >
@@ -39,17 +40,25 @@ export default function ProductCard({
           {product.name}
         </CardTitle>
       </CardHeader>
-      <CardContent className="flex  flex-col text-xl gap-2 justify-center items-center">
+      <CardContent
+        className={cn(
+          "flex my-auto flex-col text-xl gap-2 justify-center items-center",
+          {
+            "text-black": secondColor === "[#f5f5f4]",
+            "text-white": secondColor !== "[#f5f5f4]",
+          }
+        )}
+      >
         <p className="">{product.description}</p>
         <p>
           R$ <span className="font-bold text-3xl">{product.price}</span>
         </p>
       </CardContent>
-      <CardFooter>
+      <CardFooter className="mt-auto">
         <Button
           className={cn(
             "p-6 uppercase",
-            `bg-${color} hover:bg-white/5 shadow-md`
+            `bg-${color} hover:bg-${color} hover:bg-opacity-75 shadow-md`
           )}
           asChild
         >
