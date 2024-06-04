@@ -2,6 +2,7 @@ import Image from "next/image";
 import background from "../../public/green-background.png";
 import { Button } from "@/components/ui/button";
 import pote from "../../public/GreenPackagin.png";
+import Link from "next/link";
 export default function Home() {
   return (
     <article className="relative overflow-hidden h-screen">
@@ -20,8 +21,12 @@ export default function Home() {
           Arte em cada colher,
           <br /> Frescor em Cada Mordida
         </h1>
-        <Button variant="secondary" className="text-white md:w-[30%] md:p-6">
-          Faça Seu Pedido!
+        <Button
+          asChild
+          variant="secondary"
+          className="text-white md:w-[30%] md:p-6"
+        >
+          <Link href="/pedidos/novo-pedido">Faça Seu Pedido!</Link>
         </Button>
       </div>
     </article>
