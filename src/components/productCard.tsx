@@ -7,10 +7,17 @@ import {
   CardTitle,
 } from "./ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "./ui/avatar";
-import { ProductCardProps } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import { Produto } from "@/lib/types";
+type ProductCardProps = {
+  img: string;
+  imgFallback?: string;
+  color: string;
+  secondColor: string;
+  product: Produto;
+};
 
 export default function ProductCard({
   img,
