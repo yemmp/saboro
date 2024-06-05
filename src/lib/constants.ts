@@ -1,10 +1,12 @@
+import { home } from "@lucide/lab";
+
 export const INSTAGRAM_URL = "https://www.instagram.com/br.saboroo/";
 export const ENDERECO_URL =
   "https://www.google.com/maps/place/Av.+do+Contorno,+1570+-+Floresta,+Belo+Horizonte+-+MG,+38082-049/@-19.9140389,-43.9289798,17z/data=!3m1!4b1!4m6!3m5!1s0xa699f5fb6ab34d:0xf4d5a1603e837861!8m2!3d-19.9140389!4d-43.9289798!16s%2Fg%2F11c165vc_7?entry=ttu";
 export const navContent = [
-  { name: "Sabores", route: "/sabores" },
-  { name: "Home", route: "/" },
-  { name: "Sobre nós", route: "/sobre-nos" },
+  { name: "Sabores", route: "/sabores", icon: home },
+  { name: "Home", route: "/", icon: home },
+  { name: "Sobre nós", route: "/sobre-nos", icon: home },
 ];
 
 export const products = [

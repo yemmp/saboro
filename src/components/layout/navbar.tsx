@@ -4,6 +4,7 @@ import React from "react";
 import logo from "../../../public/logo-horizontal.png";
 import Image from "next/image";
 import { Button } from "../ui/button";
+import { Icon } from "lucide-react";
 
 export default function Navbar() {
   return (
@@ -19,7 +20,12 @@ export default function Navbar() {
       </Link>
       <ul className="flex  items-center gap-2 md:gap-10  ">
         {navContent.map((item) => (
-          <NavItem key={item.route} name={item.name} route={item.route} />
+          <NavItem
+            key={item.route}
+            name={item.name}
+            route={item.route}
+            icon={item.icon}
+          />
         ))}
         <Button asChild variant="secondary" className="text-white p-1 md:p-4">
           <Link href="/login">Entrar</Link>
@@ -29,10 +35,21 @@ export default function Navbar() {
   );
 }
 
-function NavItem({ name, route }: { name: string; route: string }) {
+function NavItem({
+  name,
+  route,
+  icon,
+}: {
+  name: string;
+  route: string;
+  icon: any;
+}) {
   return (
     <li className="border-r-2 border-primary/5 p-2  md:border-none hover:bg-secondary/60 hover:text-white">
-      <Link href={route}>{name}</Link>
+      <Link href={route}>
+        <Icon iconNode={icon} className="md:hidden" />
+        <p className="hidden md:inline">{name}</p>
+      </Link>
     </li>
   );
 }
