@@ -19,15 +19,19 @@ export default function Navbar() {
         />
       </Link>
       <ul className="flex  items-center gap-2 md:gap-10  ">
-        {navContent.map((item) => (
+        {navContent.map((item, index) => (
           <NavItem
-            key={item.route}
+            key={index}
             name={item.name}
             route={item.route}
             icon={item.icon}
           />
         ))}
-        <Button asChild variant="secondary" className="text-white p-1 md:p-4">
+        <Button
+          asChild
+          variant="secondary"
+          className="text-white p-1 mr-1 md:p-4"
+        >
           <Link href="/login">Entrar</Link>
         </Button>
       </ul>
@@ -47,7 +51,7 @@ function NavItem({
   return (
     <li className="border-r-2 border-primary/5 p-2  md:border-none hover:bg-secondary/60 hover:text-white">
       <Link href={route}>
-        <Icon iconNode={icon} className="md:hidden" />
+        <Icon iconNode={icon} className="stroke-primary md:hidden" />
         <p className="hidden md:inline">{name}</p>
       </Link>
     </li>

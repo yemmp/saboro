@@ -24,7 +24,7 @@ export default function Home() {
         <Button
           asChild
           variant="secondary"
-          className="text-white md:w-[30%] md:p-6"
+          className="text-white md:w-[30%] md:p-6 hover:bg-secondary hover:bg-opacity-60"
         >
           <Link href="/pedidos/novo-pedido">Faça Seu Pedido!</Link>
         </Button>
