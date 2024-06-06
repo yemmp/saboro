@@ -8,4 +8,5 @@ export function useUserContext() {
       "useUserContext tem de ser usado dentro de um UserContextProvider"
     );
   }
+  return context;
 }

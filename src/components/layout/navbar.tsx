@@ -5,6 +5,7 @@ import logo from "../../../public/logo-horizontal.png";
 import Image from "next/image";
 import { Button } from "../ui/button";
 import { Icon } from "lucide-react";
+import NavBtn from "../user/NavBtn";
 
 export default function Navbar() {
   return (
@@ -27,13 +28,7 @@ export default function Navbar() {
             icon={item.icon}
           />
         ))}
-        <Button
-          asChild
-          variant="secondary"
-          className="text-white p-1 mr-1 md:p-4"
-        >
-          <Link href="/login">Entrar</Link>
-        </Button>
+        <NavBtn />
       </ul>
     </nav>
   );
