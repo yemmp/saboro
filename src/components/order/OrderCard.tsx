@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { Card, CardContent, CardFooter, CardHeader } from "../ui/card";
 import { Frown } from "lucide-react";
 import { Button } from "../ui/button";
-import OrderProduct from "./OrderProduct";
 import OrderForm from "./OrderForm";
 
 export default function OrderCard() {
