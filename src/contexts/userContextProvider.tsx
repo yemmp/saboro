@@ -5,6 +5,7 @@ import { createContext, useState, ReactNode } from "react";
 // Context type
 type TUserContext = {
   isLogged: boolean;
+  isRegistered: boolean;
 };
 
 // Props
@@ -20,10 +21,13 @@ export default function UserContextProvider({
 }: UserContextProviderProps) {
   // States
   const [isLogged, setIsLogged] = useState(false);
+  const [isRegistered, setIsRegistered] = useState(false);
 
   // Derived State
   // Actions
   return (
-    <UserContext.Provider value={{ isLogged }}>{children}</UserContext.Provider>
+    <UserContext.Provider value={{ isLogged, isRegistered }}>
+      {children}
+    </UserContext.Provider>
   );
 }
