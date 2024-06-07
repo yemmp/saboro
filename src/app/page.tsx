@@ -5,14 +5,14 @@ import pote from "../../public/GreenPackagin.png";
 import Link from "next/link";
 export default function Home() {
   return (
-    <article className="relative overflow-hidden h-screen">
+    <article className="relative overflow-hidden min-h-screen">
       <Image src={background} alt="white-background-img" fill />
       <Image
         className="absolute bottom-[-30%] right-[-20%]"
         src={pote}
         alt="Açai Vital Pote"
-        width={786}
-        height={786}
+        width={586}
+        height={586}
       />
       <div className="flex flex-col gap-4 md:gap-20 absolute top-1/3 left-[10%]">
         <h1 className=" text-black  font-medium text-xl md:text-6xl uppercase">

@@ -8,7 +8,7 @@ import {
 } from "./ui/carousel";
 import { products } from "@/lib/constants";
 import { cn } from "@/lib/utils";
-import ProductCard from "./ProductCard";
+import ProductCard from "./productCard";
 
 export default function ProductCarousel() {
   return (
@@ -17,7 +17,7 @@ export default function ProductCarousel() {
         {products.map((item) => (
           <CarouselItem
             key={item.name}
-            className={cn("basis-[80%] md:basis-[50%] h-screen pt-4 pb-14 ")}
+            className={cn("basis-[80%] md:basis-[50%] h-full pt-4 pb-14 ")}
           >
             <ProductCard
               img={item.imgUrl}

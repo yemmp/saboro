@@ -4,6 +4,7 @@ import { Card, CardContent, CardFooter, CardHeader } from "../ui/card";
 import { Frown } from "lucide-react";
 import { Button } from "../ui/button";
 import OrderProduct from "./OrderProduct";
+import OrderForm from "./OrderForm";
 
 export default function OrderCard() {
   const [isEmpty, setIsEmpty] = useState(false);
@@ -33,7 +34,7 @@ function OrderContent() {
   return (
     <>
       <CardContent className="p-4">
-        <OrderProduct />
+        <OrderForm />
       </CardContent>
       <CardFooter className="flex flex-col md:flex-row md:justify-between items-center border-t mx-4">
         <div className="mt-4 gap-2 flex  items-center">
